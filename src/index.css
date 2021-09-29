@@ -1,13 +1,146 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+:root{
+
+/* colors */
+--very-dark-gray: hsl(0, 0%, 17%);
+--dark-gray: hsl(0, 0%, 59%);
+
+} 
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Rubik', sans-serif;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main-container{
+ display: grid;
+ grid-template-rows: .5fr .3fr .3fr 1fr ;
+ grid-template-columns: .1fr 1fr .1fr;
+
+ width: 100vw;
+ height: 100vh;
+
+ 
+ 
+}
+
+.header-container, .map-container {
+  grid-column: 1/span 3;
+}
+.header-container{
+  grid-row: 1/span 2;
+  
+  width: 100vw;
+  background-image: url('./assets/pattern-bg.png');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:1rem;
+  padding-top:2rem;
+  color: white;
+  
+}
+
+.header-container h1{
+  font-size: clamp(1.5em,2em,2.5em);
+  
+}
+.input-control,.input-control>*{
+  border: 1px solid transparent
+}
+
+.header-input{
+  width: 70%;
+  
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+ 
+
+}
+.input-control{
+  display: flex;
+  flex:0 1 30rem;
+}
+
+.input-control> input{
+  height: 100%;
+  width: 90%;
+  padding: 1rem;
+  border-radius: 5px 0 0 5px;
+  
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+.btn{
+  flex-grow: 1;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 9px 9px 0;
+ 
+}
+.btn-svg{
+  background-color: black;
+  margin: auto;
+ 
+}
+
+
+
+
+.map-container{
+  
+  grid-row: 3 / -1;
+  z-index: 0;
+  
+}
+.dashboard-container{
+  
+  grid-row: 2 / 4;
+  grid-column: 2 / 3;
+  z-index: 1;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  height:fit-content;
+ 
+
+ 
+}
+
+.dash-content{
+  flex: 1 1 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap:2rem;
+  
+
+  
+
+}
+
+.vl{
+  height: 4em;
+  border: 1px solid var(--dark-gray);
+  margin: auto 0;
+
+}
+
+.dash-content h3{
+  color:var(--dark-gray);
+  text-transform: uppercase;
+  font-size: .8em;
+
+}
+
+.dash-content h2{
+  color:var(--very-dark-gray);
+  font-size: 1.3em;
 }
