@@ -1,4 +1,4 @@
-# Public IP address Tracker
+# IP address Tracker
 
 # Screenshots
 
