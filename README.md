@@ -2,13 +2,9 @@
 
 # Screenshots
 
-##  Desktop
-
 ![Desktop view](./src/assets/sc1.png)
 
-## Mobile
 ![Mobile View](./src/assets/sc2.png)
-
 
 # Tools
 
