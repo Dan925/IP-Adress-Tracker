@@ -1,14 +1,11 @@
-# Public IP address Tracker
+# IP Address Tracker
+![React](https://img.shields.io/badge/-React-black?style=for-the-badge&logo=react)
 
 # Screenshots
 
-##  Desktop
-
 ![Desktop view](./src/assets/sc1.png)
 
-## Mobile
 ![Mobile View](./src/assets/sc2.png)
-
 
 # Tools
 
